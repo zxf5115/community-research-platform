@@ -48,7 +48,8 @@
 
                 <td>
                   <el-form-item prop="name">
-                    <el-input class="mtb10" type="textarea" v-model="dataForm.result[v.id]" :placeholder="v.standard"></el-input>
+                    <div v-if="1 == v.is_auto['value']">{{dataForm.result[v.id]}}</div>
+                    <el-input v-else class="mtb10" type="textarea" v-model="dataForm.result[v.id]" :placeholder="v.standard"></el-input>
                   </el-form-item>
                 </td>
               </tr>

@@ -2,62 +2,10 @@
   <div class="qingwu color">
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>统计</span>
+        <span>控制台</span>
       </div>
       <div class="text item text-center">
-        <el-row :gutter="20">
-          <el-col :span="8" class="default_block_col">
-            <el-card shadow="never">
-              <el-row>
-                <el-col :span="12">
-                  <i class="icon el-icon-user-solid"></i>
-                </el-col>
-                <el-col :span="12">
-                  <div class="default_day_sale">
-                    用户总数
-                    <span class="blue">
-                      {{ statistical.member_total }}
-                    </span>
-                  </div>
-                </el-col>
-              </el-row>
-            </el-card>
-          </el-col>
-          <el-col :span="8" class="default_block_col">
-            <el-card shadow="never">
-              <el-row>
-                <el-col :span="12">
-                  <i class="icon el-icon-user"></i>
-                </el-col>
-                <el-col :span="12">
-                  <div class="default_day_sale">
-                    新增用户
-                    <span class="blue">
-                      {{ statistical.today_member_total }}
-                    </span>
-                  </div>
-                </el-col>
-              </el-row>
-            </el-card>
-          </el-col>
-          <el-col :span="8" class="default_block_col">
-            <el-card shadow="never">
-              <el-row>
-                <el-col :span="12">
-                  <i class="icon el-icon-s-custom"></i>
-                </el-col>
-                <el-col :span="12">
-                  <div class="default_day_sale">
-                    车商新增
-                    <span class="blue">
-                      {{ statistical.merchant_total }}
-                    </span>
-                  </div>
-                </el-col>
-              </el-row>
-            </el-card>
-          </el-col>
-        </el-row>
+        欢迎您，登录本系统。
       </div>
     </el-card>
   </div>

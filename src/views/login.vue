@@ -95,7 +95,7 @@
             }
             else
             {
-              _this.$router.push({ name: "home" });
+              _this.$router.push({ name: "module_house_list" });
             }
           }
           else {
@@ -113,7 +113,7 @@
           params: _this.$http.adornParams()
         }).then(({data}) => {
           if (data && data.status === 200) {
-            _this.$router.push({ name: "home" });
+            _this.$router.push({ name: "module_house_list" });
           }
           else {
             _this.$router.push({ name: "login" });

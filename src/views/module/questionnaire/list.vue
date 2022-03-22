@@ -4,11 +4,11 @@
       <div class="admin_main_block_top">
         <div class="admin_main_block_left">
           <div>
-            <router-link :to="{name: 'module_questionnaire_form'}">
+            <!-- <router-link :to="{name: 'module_questionnaire_form'}">
               <el-button v-if="isAuth('module:questionnaire:form')" type="success" icon="el-icon-plus">
                 {{ $t('common.create') }}
               </el-button>
-            </router-link>
+            </router-link> -->
           </div>
         </div>
       </div>
@@ -30,7 +30,7 @@
           <el-table-column prop="create_time" :label="$t('common.create_time')" width="140">
           </el-table-column>
 
-          <el-table-column :label="$t('common.handle')" fixed="right" width="200">
+          <el-table-column :label="$t('common.handle')" fixed="right" width="220">
             <template slot-scope="scope">
               <el-button v-if="isAuth('module:questionnaire:form')" type="primary" icon="el-icon-edit" @click="$router.push({name: 'module_questionnaire_form', query: {id: scope.row.id}})">
                 {{ $t('common.update') }}

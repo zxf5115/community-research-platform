@@ -22,13 +22,6 @@
             :default-active="defaultActive"
             :router="true">
 
-            <el-menu-item index="0" route="/index">
-              <i class="el-custom-icon-console"></i>
-              <span slot="title">
-                {{ $t('common.console') }}
-              </span>
-            </el-menu-item>
-
             <el-submenu :index="v.id+''" v-for="(v,k) in permisssion_menus" :key="k">
               <template slot="title">
                 <i :class="v.icon ? 'el-custom-icon-' + v.icon : ''"></i>
